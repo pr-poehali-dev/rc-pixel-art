@@ -63,27 +63,38 @@ const Index = () => {
       <main className="relative z-10 container mx-auto px-4 py-16">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col items-center gap-12">
-            <Card className="bg-black/70 border-4 border-purple-600 p-8 backdrop-blur-sm shadow-[0_0_30px_rgba(139,92,246,0.5),0_0_20px_rgba(16,185,129,0.3)]">
-              <div className="flex flex-col items-center gap-8">
+            <div 
+              className="relative w-full h-[600px] rounded-lg overflow-hidden border-4 border-purple-600 shadow-[0_0_30px_rgba(139,92,246,0.5),0_0_20px_rgba(16,185,129,0.3)]"
+              style={{
+                backgroundImage: "url('https://cdn.poehali.dev/projects/a0e2c03e-3911-49a7-bb8a-ea90c37faa11/files/6ad8c2b3-c609-4c94-bab7-22bbabb2496d.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                imageRendering: "pixelated",
+              }}
+            >
+              <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+              
+              <div className="relative z-10 flex flex-col items-center justify-center h-full gap-8 px-8">
                 <div className="relative">
                   <img
-                    src="https://cdn.poehali.dev/projects/a0e2c03e-3911-49a7-bb8a-ea90c37faa11/files/e8bd1be5-05fc-43f1-a3b2-98f072374897.jpg"
+                    src="https://cdn.poehali.dev/files/8c83fde7-01b4-4a84-b1ba-8ae387f140b7.jpg"
                     alt="R&C Logo"
-                    className="w-64 h-64 object-contain pixelated"
+                    className="w-80 h-80 object-contain pixelated"
                     style={{
                       imageRendering: "pixelated",
-                      filter: "drop-shadow(0 0 20px rgba(139, 92, 246, 0.8)) drop-shadow(0 0 15px rgba(16, 185, 129, 0.6))",
                     }}
                   />
-                  <div className="absolute -inset-4 bg-purple-600/20 blur-2xl -z-10 animate-pulse"></div>
-                  <div className="absolute -inset-6 bg-green-500/10 blur-3xl -z-20 animate-pulse" style={{ animationDelay: "0.5s" }}></div>
                 </div>
 
                 <h2
-                  className="text-4xl text-center bg-gradient-to-r from-purple-400 via-green-400 to-purple-400 bg-clip-text text-transparent tracking-widest animate-pulse"
+                  className="text-5xl text-center tracking-widest animate-pulse"
                   style={{
                     fontFamily: "'Press Start 2P', monospace",
-                    filter: "drop-shadow(0 0 10px rgba(139, 92, 246, 0.8)) drop-shadow(0 0 10px rgba(16, 185, 129, 0.6))",
+                    background: "linear-gradient(90deg, #8B5CF6 0%, #10B981 50%, #8B5CF6 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                    filter: "drop-shadow(0 0 20px rgba(139, 92, 246, 1)) drop-shadow(0 0 20px rgba(16, 185, 129, 1))",
                     lineHeight: "1.5",
                   }}
                 >
@@ -91,8 +102,11 @@ const Index = () => {
                 </h2>
 
                 <p
-                  className="text-center text-purple-300 max-w-md"
-                  style={{ fontFamily: "'Orbitron', sans-serif" }}
+                  className="text-center text-white max-w-md text-lg"
+                  style={{ 
+                    fontFamily: "'Orbitron', sans-serif",
+                    textShadow: "0 0 10px rgba(0,0,0,0.8), 0 2px 4px rgba(0,0,0,0.5)"
+                  }}
                 >
                   Кубический мир в стиле Minecraft. Строй, добывай ресурсы, исследуй блочную вселенную!
                 </p>
@@ -107,7 +121,7 @@ const Index = () => {
                   ИГРАТЬ
                 </Button>
               </div>
-            </Card>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
               <Card className="bg-black/70 border-4 border-purple-600 p-6 backdrop-blur-sm hover:border-green-400 transition-all hover:shadow-[0_0_20px_rgba(16,185,129,0.5)]">
