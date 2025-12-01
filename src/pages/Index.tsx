@@ -65,7 +65,7 @@ const Index = () => {
               <div className="flex flex-col items-center gap-8">
                 <div className="relative">
                   <img
-                    src="https://cdn.poehali.dev/projects/a0e2c03e-3911-49a7-bb8a-ea90c37faa11/files/a64b0f6f-b761-434c-8d5d-17da9c74f88b.jpg"
+                    src="https://cdn.poehali.dev/projects/a0e2c03e-3911-49a7-bb8a-ea90c37faa11/files/b88ce741-0f52-4a3d-a5b1-57efa3c517d7.jpg"
                     alt="R&C Logo"
                     className="w-64 h-64 object-contain pixelated"
                     style={{
