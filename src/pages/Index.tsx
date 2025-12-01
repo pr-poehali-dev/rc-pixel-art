@@ -38,7 +38,7 @@ const Index = () => {
           <div className="flex items-center gap-4">
             <Icon name="Gamepad2" className="text-purple-500" size={32} />
             <h1 className="text-2xl font-bold text-purple-400 tracking-wider" style={{ fontFamily: "'Orbitron', sans-serif" }}>
-              РЕТРО ПЛАТФОРМА
+              MINECRAFT EDITION
             </h1>
           </div>
           <div className="flex items-center gap-6">
@@ -65,7 +65,7 @@ const Index = () => {
               <div className="flex flex-col items-center gap-8">
                 <div className="relative">
                   <img
-                    src="https://cdn.poehali.dev/projects/a0e2c03e-3911-49a7-bb8a-ea90c37faa11/files/b88ce741-0f52-4a3d-a5b1-57efa3c517d7.jpg"
+                    src="https://cdn.poehali.dev/projects/a0e2c03e-3911-49a7-bb8a-ea90c37faa11/files/e8bd1be5-05fc-43f1-a3b2-98f072374897.jpg"
                     alt="R&C Logo"
                     className="w-64 h-64 object-contain pixelated"
                     style={{
@@ -84,14 +84,14 @@ const Index = () => {
                     lineHeight: "1.5",
                   }}
                 >
-                  RETRO & CYBER
+                  R&C CRAFT
                 </h2>
 
                 <p
                   className="text-center text-purple-300 max-w-md"
                   style={{ fontFamily: "'Orbitron', sans-serif" }}
                 >
-                  Игровая платформа в стиле классического 8-bit. Прыгай, собирай монеты, побеждай врагов!
+                  Кубический мир в стиле Minecraft. Строй, добывай ресурсы, исследуй блочную вселенную!
                 </p>
 
                 <Button
@@ -116,10 +116,10 @@ const Index = () => {
                     className="text-lg text-purple-300"
                     style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: "700" }}
                   >
-                    ПЛАТФОРМЫ
+                    БЛОКИ
                   </h3>
                   <p className="text-center text-purple-400 text-sm" style={{ fontFamily: "'Orbitron', sans-serif" }}>
-                    Блочные уровни как в классических играх
+                    Кубические блоки для строительства миров
                   </p>
                 </div>
               </Card>
@@ -133,10 +133,10 @@ const Index = () => {
                     className="text-lg text-purple-300"
                     style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: "700" }}
                   >
-                    ВРАГИ
+                    КРАФТ
                   </h3>
                   <p className="text-center text-purple-400 text-sm" style={{ fontFamily: "'Orbitron', sans-serif" }}>
-                    Пиксельные противники в стиле 8-bit
+                    Создавай инструменты и предметы
                   </p>
                 </div>
               </Card>
@@ -150,10 +150,10 @@ const Index = () => {
                     className="text-lg text-purple-300"
                     style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: "700" }}
                   >
-                    ОЧКИ
+                    РЕСУРСЫ
                   </h3>
                   <p className="text-center text-purple-400 text-sm" style={{ fontFamily: "'Orbitron', sans-serif" }}>
-                    Собирай бонусы и побеждай рекорды
+                    Добывай редкие материалы и руды
                   </p>
                 </div>
               </Card>
@@ -177,7 +177,7 @@ const Index = () => {
       <footer className="relative z-10 border-t-4 border-purple-600 bg-black/50 backdrop-blur-sm mt-20">
         <div className="container mx-auto px-4 py-6 text-center">
           <p className="text-purple-400" style={{ fontFamily: "'Orbitron', sans-serif" }}>
-            © 2025 R&C Platform • Pixel Art Edition
+            © 2025 R&C Platform • Minecraft Edition
           </p>
         </div>
       </footer>
