@@ -65,7 +65,7 @@ const Index = () => {
           <div className="flex flex-col items-center gap-12">
             <div className="relative w-full max-w-2xl mx-auto">
               <img
-                src="https://cdn.poehali.dev/projects/a0e2c03e-3911-49a7-bb8a-ea90c37faa11/files/58dcddc8-5a84-4995-bfb6-1626ae61000b.jpg"
+                src="https://cdn.poehali.dev/projects/a0e2c03e-3911-49a7-bb8a-ea90c37faa11/files/7e8863d2-9a29-498b-a08a-e4e4c42f4b9c.jpg"
                 alt="R&C Logo with Minecraft T-Rex"
                 className="w-full h-auto object-contain pixelated rounded-lg shadow-[0_0_40px_rgba(139,92,246,0.6),0_0_30px_rgba(16,185,129,0.4)]"
                 style={{
