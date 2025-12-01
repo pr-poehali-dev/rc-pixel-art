@@ -63,64 +63,15 @@ const Index = () => {
       <main className="relative z-10 container mx-auto px-4 py-16">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col items-center gap-12">
-            <div 
-              className="relative w-full h-[600px] rounded-lg overflow-hidden border-4 border-purple-600 shadow-[0_0_30px_rgba(139,92,246,0.5),0_0_20px_rgba(16,185,129,0.3)]"
-              style={{
-                backgroundImage: "url('https://cdn.poehali.dev/projects/a0e2c03e-3911-49a7-bb8a-ea90c37faa11/files/6ad8c2b3-c609-4c94-bab7-22bbabb2496d.jpg')",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                imageRendering: "pixelated",
-              }}
-            >
-              <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
-              
-              <div className="relative z-10 flex flex-col items-center justify-center h-full gap-8 px-8">
-                <div className="relative">
-                  <img
-                    src="https://cdn.poehali.dev/files/8c83fde7-01b4-4a84-b1ba-8ae387f140b7.jpg"
-                    alt="R&C Logo"
-                    className="w-80 h-80 object-contain pixelated"
-                    style={{
-                      imageRendering: "pixelated",
-                    }}
-                  />
-                </div>
-
-                <h2
-                  className="text-5xl text-center tracking-widest animate-pulse"
-                  style={{
-                    fontFamily: "'Press Start 2P', monospace",
-                    background: "linear-gradient(90deg, #8B5CF6 0%, #10B981 50%, #8B5CF6 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundClip: "text",
-                    filter: "drop-shadow(0 0 20px rgba(139, 92, 246, 1)) drop-shadow(0 0 20px rgba(16, 185, 129, 1))",
-                    lineHeight: "1.5",
-                  }}
-                >
-                  R&C CRAFT
-                </h2>
-
-                <p
-                  className="text-center text-white max-w-md text-lg"
-                  style={{ 
-                    fontFamily: "'Orbitron', sans-serif",
-                    textShadow: "0 0 10px rgba(0,0,0,0.8), 0 2px 4px rgba(0,0,0,0.5)"
-                  }}
-                >
-                  Кубический мир в стиле Minecraft. Строй, добывай ресурсы, исследуй блочную вселенную!
-                </p>
-
-                <Button
-                  onClick={handleJump}
-                  size="lg"
-                  className="bg-gradient-to-r from-purple-600 to-green-600 hover:from-purple-700 hover:to-green-700 text-white border-4 border-green-400 px-8 py-6 text-lg font-bold shadow-[0_0_20px_rgba(139,92,246,0.5),0_0_15px_rgba(16,185,129,0.4)] hover:shadow-[0_0_30px_rgba(139,92,246,0.8),0_0_25px_rgba(16,185,129,0.6)] transition-all hover:scale-105"
-                  style={{ fontFamily: "'Orbitron', sans-serif" }}
-                >
-                  <Icon name="Rocket" className="mr-2" size={24} />
-                  ИГРАТЬ
-                </Button>
-              </div>
+            <div className="relative w-full max-w-2xl mx-auto">
+              <img
+                src="https://cdn.poehali.dev/files/8c83fde7-01b4-4a84-b1ba-8ae387f140b7.jpg"
+                alt="R&C Logo"
+                className="w-full h-auto object-contain pixelated rounded-lg shadow-[0_0_40px_rgba(139,92,246,0.6),0_0_30px_rgba(16,185,129,0.4)]"
+                style={{
+                  imageRendering: "pixelated",
+                }}
+              />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
