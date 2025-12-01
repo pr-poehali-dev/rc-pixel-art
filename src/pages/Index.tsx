@@ -16,12 +16,14 @@ const Index = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-purple-950/20 via-black to-black"></div>
       
       <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-purple-900/30 to-transparent"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-green-500/10 blur-3xl rounded-full"></div>
+      <div className="absolute top-1/3 left-0 w-64 h-64 bg-emerald-500/10 blur-3xl rounded-full"></div>
 
       <div className="absolute inset-0">
         {[...Array(30)].map((_, i) => (
           <div
             key={i}
-            className="absolute bg-purple-500/10"
+            className={i % 3 === 0 ? "absolute bg-green-500/20" : "absolute bg-purple-500/10"}
             style={{
               width: Math.random() * 3 + 1 + "px",
               height: Math.random() * 3 + 1 + "px",
@@ -33,11 +35,11 @@ const Index = () => {
         ))}
       </div>
 
-      <header className="relative z-10 border-b-4 border-purple-600 bg-black/50 backdrop-blur-sm">
+      <header className="relative z-10 border-b-4 border-purple-600 bg-black/50 backdrop-blur-sm shadow-[0_4px_20px_rgba(16,185,129,0.2)]">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <Icon name="Gamepad2" className="text-purple-500" size={32} />
-            <h1 className="text-2xl font-bold text-purple-400 tracking-wider" style={{ fontFamily: "'Orbitron', sans-serif" }}>
+            <Icon name="Gamepad2" className="text-green-500" size={32} />
+            <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-green-400 bg-clip-text text-transparent tracking-wider" style={{ fontFamily: "'Orbitron', sans-serif" }}>
               MINECRAFT EDITION
             </h1>
           </div>
@@ -61,7 +63,7 @@ const Index = () => {
       <main className="relative z-10 container mx-auto px-4 py-16">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col items-center gap-12">
-            <Card className="bg-black/70 border-4 border-purple-600 p-8 backdrop-blur-sm shadow-[0_0_30px_rgba(139,92,246,0.5)]">
+            <Card className="bg-black/70 border-4 border-purple-600 p-8 backdrop-blur-sm shadow-[0_0_30px_rgba(139,92,246,0.5),0_0_20px_rgba(16,185,129,0.3)]">
               <div className="flex flex-col items-center gap-8">
                 <div className="relative">
                   <img
@@ -70,17 +72,18 @@ const Index = () => {
                     className="w-64 h-64 object-contain pixelated"
                     style={{
                       imageRendering: "pixelated",
-                      filter: "drop-shadow(0 0 20px rgba(139, 92, 246, 0.8))",
+                      filter: "drop-shadow(0 0 20px rgba(139, 92, 246, 0.8)) drop-shadow(0 0 15px rgba(16, 185, 129, 0.6))",
                     }}
                   />
                   <div className="absolute -inset-4 bg-purple-600/20 blur-2xl -z-10 animate-pulse"></div>
+                  <div className="absolute -inset-6 bg-green-500/10 blur-3xl -z-20 animate-pulse" style={{ animationDelay: "0.5s" }}></div>
                 </div>
 
                 <h2
-                  className="text-4xl text-center text-purple-400 tracking-widest animate-pulse"
+                  className="text-4xl text-center bg-gradient-to-r from-purple-400 via-green-400 to-purple-400 bg-clip-text text-transparent tracking-widest animate-pulse"
                   style={{
                     fontFamily: "'Press Start 2P', monospace",
-                    textShadow: "0 0 10px rgba(139, 92, 246, 0.8), 0 0 20px rgba(139, 92, 246, 0.5)",
+                    filter: "drop-shadow(0 0 10px rgba(139, 92, 246, 0.8)) drop-shadow(0 0 10px rgba(16, 185, 129, 0.6))",
                     lineHeight: "1.5",
                   }}
                 >
@@ -97,7 +100,7 @@ const Index = () => {
                 <Button
                   onClick={handleJump}
                   size="lg"
-                  className="bg-purple-600 hover:bg-purple-700 text-white border-4 border-purple-400 px-8 py-6 text-lg font-bold shadow-[0_0_20px_rgba(139,92,246,0.5)] hover:shadow-[0_0_30px_rgba(139,92,246,0.8)] transition-all hover:scale-105"
+                  className="bg-gradient-to-r from-purple-600 to-green-600 hover:from-purple-700 hover:to-green-700 text-white border-4 border-green-400 px-8 py-6 text-lg font-bold shadow-[0_0_20px_rgba(139,92,246,0.5),0_0_15px_rgba(16,185,129,0.4)] hover:shadow-[0_0_30px_rgba(139,92,246,0.8),0_0_25px_rgba(16,185,129,0.6)] transition-all hover:scale-105"
                   style={{ fontFamily: "'Orbitron', sans-serif" }}
                 >
                   <Icon name="Rocket" className="mr-2" size={24} />
@@ -107,10 +110,10 @@ const Index = () => {
             </Card>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
-              <Card className="bg-black/70 border-4 border-purple-600 p-6 backdrop-blur-sm hover:border-purple-400 transition-all hover:shadow-[0_0_20px_rgba(139,92,246,0.5)]">
+              <Card className="bg-black/70 border-4 border-purple-600 p-6 backdrop-blur-sm hover:border-green-400 transition-all hover:shadow-[0_0_20px_rgba(16,185,129,0.5)]">
                 <div className="flex flex-col items-center gap-4">
-                  <div className="w-16 h-16 bg-purple-600 border-4 border-purple-400 flex items-center justify-center">
-                    <Icon name="Blocks" className="text-purple-100" size={32} />
+                  <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-green-600 border-4 border-green-400 flex items-center justify-center">
+                    <Icon name="Blocks" className="text-green-100" size={32} />
                   </div>
                   <h3
                     className="text-lg text-purple-300"
@@ -124,10 +127,10 @@ const Index = () => {
                 </div>
               </Card>
 
-              <Card className="bg-black/70 border-4 border-purple-600 p-6 backdrop-blur-sm hover:border-purple-400 transition-all hover:shadow-[0_0_20px_rgba(139,92,246,0.5)]">
+              <Card className="bg-black/70 border-4 border-purple-600 p-6 backdrop-blur-sm hover:border-green-400 transition-all hover:shadow-[0_0_20px_rgba(16,185,129,0.5)]">
                 <div className="flex flex-col items-center gap-4">
-                  <div className="w-16 h-16 bg-purple-600 border-4 border-purple-400 flex items-center justify-center">
-                    <Icon name="Ghost" className="text-purple-100" size={32} />
+                  <div className="w-16 h-16 bg-gradient-to-br from-green-600 to-purple-600 border-4 border-green-400 flex items-center justify-center">
+                    <Icon name="Ghost" className="text-green-100" size={32} />
                   </div>
                   <h3
                     className="text-lg text-purple-300"
@@ -141,10 +144,10 @@ const Index = () => {
                 </div>
               </Card>
 
-              <Card className="bg-black/70 border-4 border-purple-600 p-6 backdrop-blur-sm hover:border-purple-400 transition-all hover:shadow-[0_0_20px_rgba(139,92,246,0.5)]">
+              <Card className="bg-black/70 border-4 border-purple-600 p-6 backdrop-blur-sm hover:border-green-400 transition-all hover:shadow-[0_0_20px_rgba(16,185,129,0.5)]">
                 <div className="flex flex-col items-center gap-4">
-                  <div className="w-16 h-16 bg-purple-600 border-4 border-purple-400 flex items-center justify-center">
-                    <Icon name="Trophy" className="text-purple-100" size={32} />
+                  <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-green-600 border-4 border-green-400 flex items-center justify-center">
+                    <Icon name="Trophy" className="text-green-100" size={32} />
                   </div>
                   <h3
                     className="text-lg text-purple-300"
@@ -163,7 +166,7 @@ const Index = () => {
               {[...Array(8)].map((_, i) => (
                 <div
                   key={i}
-                  className="w-12 h-12 bg-purple-700 border-2 border-purple-500 hover:bg-purple-600 transition-colors cursor-pointer hover:scale-110 transform"
+                  className={`w-12 h-12 ${i % 2 === 0 ? 'bg-purple-700 border-2 border-purple-500 hover:bg-purple-600' : 'bg-green-700 border-2 border-green-500 hover:bg-green-600'} transition-colors cursor-pointer hover:scale-110 transform`}
                   style={{
                     boxShadow: "inset -2px -2px 0 rgba(0,0,0,0.3)",
                   }}
